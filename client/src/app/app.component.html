@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm nav-bckcolor navbar-dark">
         <div class="navbar-header">
             <div class="navbar-brand"><h1>Project Management</h1></div>
         </div>
-        <ul class="nav navbar-nav" id="horizontal-list">
+        <div class="navright">
+        <ul class="nav navbar-nav navright" id="horizontal-list">
             <li [routerLinkActive]="['active']">
                 <a [routerLink]="['/project']">Add Project</a>
             </li>
@@ -16,6 +17,7 @@
                 <a [routerLink]="['/viewTask']">View Task</a>
             </li>
         </ul>
+    </div>
 </nav>
 
 

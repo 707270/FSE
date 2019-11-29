@@ -19,6 +19,11 @@
     display: none;
 
 }
+.navright{
+    float:right;
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
 
  
 
@@ -77,4 +82,16 @@ ul#horizontal-list li {
     border-block: initial;
     border-block-color: inherit;	
     font-size: 12px;
+}
+.nav-bckcolor{
+    background-color: #337ab7;
+}
+.navbar {
+    height: 60px;
+}
+.nav>li>a{
+    color:antiquewhite;
+}
+ul li a:hover, ul li a:focus {
+    color:#337ab7;
 }

@@ -8,8 +8,10 @@
 }
 
 ul.list-group {
-    width: 80%;
+    width: 90%;
     display: inline-block;
+    margin-bottom: 6px;
+    border: 1px solid darkgray;
 }
 
 div.view-buttons {
@@ -20,4 +22,7 @@ div.view-buttons {
 .flex-container div.view-buttons .btn-primary {
     margin-bottom: 10px;
     display: block;
+}
+.li-bckcolor{
+    BACKGROUND-COLOR: bisque;
 }

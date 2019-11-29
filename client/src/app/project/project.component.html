@@ -89,7 +89,7 @@
       </div>
       <div class="flex-container" *ngFor="let project of projects|filteruser:{projectName:searchText,projectStartDate:searchText,projectEndDate:searchText}">
         <ul class="list-group">
-          <li class="list-group-item">Project:
+          <li class="list-group-item li-bckcolor">Project:
             <strong>{{project.projectName}}</strong>
           </li>
           <li class="list-group-item">
@@ -119,6 +119,7 @@
           <button class="btn btn-danger" (click)="deleteProject(project)">Suspend</button>
         </div>
       </div>
+    <br>
     </div>
   </div>
   <ng-template #userModal>

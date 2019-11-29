@@ -13,6 +13,7 @@ import { TaskService } from '../services/task.service';
 import { ParentTask } from '../models/parentTask';
 
 import * as moment from 'moment';
+import { BsDatepickerConfig } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-add-task',
@@ -38,10 +39,10 @@ export class AddTaskComponent implements OnInit {
   minEndDate: Date;
   buttonName: string;
   updateDisabled: boolean;
-
+  public containerClass: Partial<BsDatepickerConfig> = new BsDatepickerConfig();
   constructor(private eventService: EventService, private projectService: ProjectService,
     private userService: UserService, private taskService: TaskService, private modalService: BsModalService, private route: ActivatedRoute) {
-
+      this.containerClass.containerClass = 'RED'; //or whatever color
     if (route.snapshot.params['task']) {
       this.taskToAdd = JSON.parse(route.snapshot.params['task']);
       this.buttonName = 'Update';
@@ -72,7 +73,9 @@ export class AddTaskComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
+
 
   setMinEndDate($event) {
     this.minEndDate = moment(this.taskToAdd.start_Date).add(1, 'days').toDate();
