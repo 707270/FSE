@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/server/ProjectManager/.vs
+/server/ProjectManager/packages
+/server/ProjectManager/PerformanceTests/bin/Debug
+/server/ProjectManager/PerformanceTests/obj
+/server/ProjectManager/ProjectManager/bin
+/server/ProjectManager/ProjectManager/obj
+/server/ProjectManager/ProjectManager.Tests/bin/Debug
+/server/ProjectManager/ProjectManager.Tests/obj
