@@ -64,3 +64,17 @@
     height: 10rem;
 
 }
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+    padding-top: 20px;
+    display: inline;
+}
+ul#horizontal-list li {
+    padding: 5px;
+    border: 1px;
+    border-block: initial;
+    border-block-color: inherit;	
+    font-size: 12px;
+}

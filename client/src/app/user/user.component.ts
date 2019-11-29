@@ -61,6 +61,7 @@ export class UserComponent implements OnInit {
           this.eventService.showLoading(false);
         });
     }
+    alert("User added successfully!!");
     if (this.buttonName === 'Update') {
       this.eventService.showLoading(true);
       this.userService.updateUser(this.userToAdd).subscribe((data) => {
