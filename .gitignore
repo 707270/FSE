@@ -11,3 +11,11 @@
 /server/ProjectManager/ProjectManager/obj
 /server/ProjectManager/ProjectManager.Tests/bin/Debug
 /server/ProjectManager/ProjectManager.Tests/obj
+/server/.vs
+/server/packages
+/server/PerformanceTests/bin/Debug
+/server/PerformanceTests/obj
+/server/ProjectManager/bin
+/server/ProjectManager/obj
+/server/ProjectManager.Tests/bin/Debug
+/server/ProjectManager.Tests/obj
