@@ -1,0 +1,55 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/707270/FSE.git # timeout=10
+Fetching upstream changes from https://github.com/707270/FSE.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/707270/FSE.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 6a6cacb64bd66f5781242d1e217522cd887f3860 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 6a6cacb64bd66f5781242d1e217522cd887f3860
+Commit message: "Modify html and css for design"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 349e909fc8a7c05cc4e2bcb9ae2b855fb3be9ac8 # timeout=10
+[ProjectManager_Api] $ cmd /c call C:\Windows\TEMP\jenkins5012448767273814110.bat
+
+C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api>C:\Users\Admin\Documents\nuget\nuget.exe restore server\ProjectManager.sln 
+MSBuild auto-detection: using msbuild version '15.9.21.664' from 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\bin'.
+All packages listed in packages.config are already installed.
+
+C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api>exit 0 
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe
+Executing the command cmd.exe /C " chcp 1252 & C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release /p:VisualStudioVersion=10.0 "C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\ProjectManager\ProjectManager.csproj" " && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api
+[ProjectManager_Api] $ cmd.exe /C " chcp 1252 & C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release /p:VisualStudioVersion=10.0 "C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\ProjectManager\ProjectManager.csproj" " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 4.6.1055.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 03-12-2019 12:33:35.
+Project "C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\ProjectManager\ProjectManager.csproj" on node 1 (default targets).
+Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\NLog.4.5.11\lib\net45\NLog.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.EnterpriseServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.IO.Compression.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Security.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ServiceModel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Transactions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.ApplicationServices.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Entity.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Extensions.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll" /reference:"C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Services.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Windows.Forms.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /debug+ /debug:pdbonly /optimize+ /out:obj\Release\ProjectManager.dll /subsystemversion:6.00 /resource:obj\Release\edmxResourcesToEmbed\DAC\ProjectManager.csdl,DAC.ProjectManager.csdl /resource:obj\Release\edmxResourcesToEmbed\DAC\ProjectManager.msl,DAC.ProjectManager.msl /resource:obj\Release\edmxResourcesToEmbed\DAC\ProjectManager.ssdl,DAC.ProjectManager.ssdl /target:library /utf8output ActionFilters\ProjectManagerExceptionFilterAttribute.cs ActionFilters\ProjectManagerLogFilterAttribute.cs App_Start\WebApiConfig.cs BC\ProjectBC.cs BC\UserBC.cs BC\TaskBC.cs Controllers\ProjectController.cs Controllers\TaskController.cs Controllers\UserController.cs DAC\Model1.Context.cs DAC\Model1.cs DAC\ProjectManager.Designer.cs DAC\ParentTask.cs DAC\Project.cs DAC\Task.cs DAC\User.cs Global.asax.cs Models\JSendResponse.cs Models\ParentTask.cs Models\Task.cs Models\Project.cs Models\User.cs Properties\AssemblyInfo.cs Utils\LoggingUtility.cs "C:\Windows\TEMP\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\ProjectManager.dll" to "bin\ProjectManager.dll".
+  ProjectManager -> C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\ProjectManager\bin\ProjectManager.dll
+  Copying file from "obj\Release\ProjectManager.pdb" to "bin\ProjectManager.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\ProjectManager_Api\server\ProjectManager\ProjectManager.csproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.89
+Finished: SUCCESS
